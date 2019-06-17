@@ -57,13 +57,13 @@
 		<div class="wallet">
 			<div class="card" id="front">
 				{#if numberCard.substr(0,1) == "4"}
-					<div class="bank"><img src="visa.png" alt=""></div>
+					<div class="bank"><!--<img src="visa.png" alt="">-->VISA</div>
 				{:else if numberCard.substr(0,1) == "5"}
-					<div class="bank"><img src="master.jpg" alt=""></div>
+					<div class="bank"><!--<img src="master.jpg" alt="">-->MASTERCARD</div>
 				{:else if numberCard.substr(0,1) == "3"}
-					<div class="bank"><img src="amex.jpg" alt=""></div>
+					<div class="bank"><!--<img src="amex.jpg" alt="">-->AMEX</div>
 				{:else}
-					<div class="bank"><img src="card.jpg" alt=""></div>
+					<div class="bank"><!--<img src="card.jpg" alt="">-->BANCO</div>
 				{/if}
 				<div class="number">{numberCard || 'Número Tarjeta'}</div>
 				<div class="name">{name || 'Nombre Completo'}</div>
